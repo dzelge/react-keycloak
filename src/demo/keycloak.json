@@ -1,0 +1,8 @@
+{
+  "realm": "master",
+  "auth-server-url": "https://192.171.139.54.xip.io/auth",
+  "ssl-required": "external",
+  "resource": "react-test",
+  "public-client": true,
+  "confidential-port": 0
+}

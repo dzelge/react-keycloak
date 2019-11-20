@@ -6,9 +6,9 @@ import { useAxios } from '../utils/hooks';
 
 export default () => {
   const { keycloak } = useKeycloak();
-  const axiosInstance = useAxios('http://localhost:5000'); // see https://github.com/panz3r/jwt-checker-server for a quick implementation
+  const axiosInstance = useAxios('https://127.0.0.1/keycloak'); // see https://github.com/panz3r/jwt-checker-server for a quick implementation
   const callApi = useCallback(() => {
-    axiosInstance.get('/jwt/decode');
+    axiosInstance.get('/');
   }, [axiosInstance]);
 
   return (

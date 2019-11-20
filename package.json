@@ -92,7 +92,7 @@
     "postcss-safe-parser": "4.0.1",
     "react": "^16.10.1",
     "react-app-polyfill": "^1.0.3",
-    "react-dev-utils": "^9.0.4",
+    "react-dev-utils": "^9.1.0",
     "react-dom": "^16.10.1",
     "react-navi": "^0.12.6",
     "react-test-renderer": "16.8.6",
@@ -106,7 +106,7 @@
     "typescript": "^3.4.5",
     "url-loader": "2.1.0",
     "webpack": "4.40.2",
-    "webpack-dev-server": "3.2.1",
+    "webpack-dev-server": "3.9.0",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "4.3.1"
   },

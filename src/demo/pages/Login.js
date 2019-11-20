@@ -1,19 +1,20 @@
-import { route } from 'navi';
+import {route} from 'navi';
 import React from 'react';
 
-import { withKeycloak } from '../../lib';
+import {withKeycloak} from '../../lib';
 
-const LoginPage = withKeycloak(({ keycloak }) => {
-  return (
-    <div>
-      <button type="button" onClick={() => keycloak.login()}>
-        Login
-      </button>
-    </div>
-  );
+const LoginPage = withKeycloak(({keycloak}) => {
+    console.log('test');
+    return (
+        <div>
+            <button type="button" onClick={() => keycloak.login()}>
+                Login
+            </button>
+        </div>
+    );
 });
 
 export default route({
-  title: 'Login',
-  view: <LoginPage />
+    title: 'Login',
+    view: <LoginPage/>
 });

@@ -30,7 +30,8 @@ const routes = mount({
 
 export const AppRouter = () => {
   const [keycloak, initialized] = useKeycloak();
-
+  console.log(keycloak);
+  console.log(initialized);
   if (!initialized) {
     return <div>Loading...</div>;
   }
