@@ -12,10 +12,12 @@ COPY package.json yarn.lock ./
 RUN yarn --version
 RUN yarn install --network-concurrency 1 --network-timeout 1000000
 COPY . ./
-RUN yarn build
+
+
+CMD  ["yarn","start"]
 
 # Stage 2 - the production environment
-FROM nginx:1.12-alpine
-COPY --from=build-deps /usr/src/app/build /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+#FROM nginx:1.12-alpine
+#COPY --from=build-deps /usr/src/app/build /usr/share/nginx/html
+#EXPOSE 80
+#CMD ["nginx", "-g", "daemon off;"]

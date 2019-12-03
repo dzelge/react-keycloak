@@ -6,11 +6,12 @@ import { useAxios } from '../utils/hooks';
 
 export default () => {
   const { keycloak } = useKeycloak();
-  const axiosInstance = useAxios('https://127.0.0.1/keycloak'); // see https://github.com/panz3r/jwt-checker-server for a quick implementation
+  const axiosInstance = useAxios('https://cate-auth-test.192.171.139.57.nip.io/backend'); // see https://github.com/panz3r/jwt-checker-server for a quick implementation
   const callApi = useCallback(() => {
     axiosInstance.get('/');
   }, [axiosInstance]);
 
+  console.log("Calling https://cate-auth-test.192.171.139.57.nip.io/backend")
   return (
     <div>
       <div>User is {!keycloak.authenticated ? 'NOT ' : ''} authenticated</div>
