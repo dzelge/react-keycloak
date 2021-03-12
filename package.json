@@ -92,7 +92,7 @@
     "postcss-safe-parser": "4.0.1",
     "react": "^16.10.1",
     "react-app-polyfill": "^1.0.3",
-    "react-dev-utils": "^9.1.0",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.10.1",
     "react-navi": "^0.12.6",
     "react-test-renderer": "16.8.6",
